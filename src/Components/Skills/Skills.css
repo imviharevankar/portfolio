@@ -1,0 +1,123 @@
+
+.skills{
+  padding: 25px 30px;
+  width: 500px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skills .bar{
+  margin: 20px 0;
+}
+.skills .bar:first-child{
+  margin-top: 0px;
+}
+.info {
+    color: #feda4a
+}
+.skills .bar .info{
+  margin-bottom: 5px;
+}
+.skills .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skills .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: white;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #feda4a;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 80%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.javascript span{
+  width: 60%;
+}
+.bar .progress-line.mongoDB span{
+  width: 60%;
+}
+.bar .progress-line.nodeJS span{
+  width: 50%;
+}
+.bar .progress-line.react span{
+  width: 50%;
+}
+.bar .progress-line.c span{
+  width: 70%;
+}
+.bar .progress-line.csharp span{
+  width: 80%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.bar .progress-line.msSqlServer span{
+  width: 40%;
+}
+
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #feda4a;
+  color: #ffffff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    width: 350px;
+  }
+}
+

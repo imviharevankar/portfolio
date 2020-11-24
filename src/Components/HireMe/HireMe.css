@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+.hireMe {
+    color: #feda4a;
+    font-family: "Pathway Gothic One", sans-serif;
+    width: 500px;
+}
+.hireMe h1{
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+}
+
+.hireMe form {
+    margin: auto;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.hireMe input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 5vh; 
+}
+
+.hireMe textarea {
+    width: 400px;
+    margin-bottom: 5vh;
+    height: 100px;
+}
+
+.hireMe button {
+    height: 50px;
+    width: 150px;
+    background-color: #feda4a;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem
+}
+button:hover {
+    transform: scale(1.1)
+}
+
+.hireMe__styles {
+    outline: none;
+    font-family: "Pathway Gothic One", sans-serif;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}

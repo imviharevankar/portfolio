@@ -1,0 +1,32 @@
+.projectCard {
+    border: 1px solid #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px -15px #feda4a;
+}
+
+.projectCard span {
+    font-weight: 400;
+    padding-left: 5px;
+}
+.projectCard:hover {
+    transform: scale(1.1);
+    box-shadow: 5px -7.5px;
+}
+
+.projectCard__description {
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+
+.projectCard__icons {
+    text-align: end;
+}
+
+.projectCard__link:visited {
+    color: #feda4a;
+}
+.projectCard__link:hover{
+    color: white;
+}

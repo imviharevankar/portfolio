@@ -1,0 +1,10 @@
+.main {
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: 1fr;
+    height: 80vh;
+}
+
+.main__content {
+    border: 1px solid white;
+}

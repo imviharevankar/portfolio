@@ -1,0 +1,73 @@
+.projectCard {
+    border: 1px solid #F2D100;
+    box-shadow: 2px 2px 1px #F2D100;
+    width: 300px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(2px);
+    animation: slideProject 2s linear;
+}
+
+.projectCard:nth-child(even) {
+    animation: slideProjectLeft 2s linear;
+}
+
+
+.projectCard__info {
+    padding: 10px;
+    color: #F7F7F7;
+}
+
+.projectCard__info > div:nth-child(4) {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 10px;
+}
+
+.projectCard__info > div:nth-child(3) {
+    margin-top: 10px;
+}
+
+.projectCard__info > div > p {
+    font-size: 13px;
+}
+
+.projectCard__badge {
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 2px 10px;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.projectCard__icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scrollbar__hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge add Firefox */
+  .scrollbar__hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+
+
+@keyframes slideProject {
+    0% {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes slideProjectLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+}
+

@@ -1,0 +1,9 @@
+.skills {
+    margin-left: 100px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+}
+

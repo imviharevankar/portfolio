@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: #F7F7F7;
+    font-size: 15px;
+}
+
+a:visited {
+    color: inherit;
+}
+a:active {
+    color: inherit;
+}

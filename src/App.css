@@ -1,0 +1,19 @@
+.app {
+
+
+}
+
+.app__main {
+  display: grid;
+  margin-top: 5vh;
+  grid-template-columns: 1fr;
+  height: 80vh;
+}
+
+.color {
+  color: #F2D100;
+}
+
+.MuiTouchRipple-rippleVisible {
+  color: #F2D100 !important;
+}

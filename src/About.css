@@ -1,0 +1,39 @@
+.aboutMe__animation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+    color: #F2D100;
+    overflow: hidden;
+    font-size: 500%;
+    font-weight: 600;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+    padding-left: 50px;
+    letter-spacing: 6px;
+    width: 80%;
+    min-width: 200px;
+    margin: auto;
+}
+
+.aboutMe__crawl {
+    position: relative;
+    top: 999px;
+    transform-origin: 50% 100%;
+    animation: crawl 45s linear infinite;
+}
+
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+
+    100% { 
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+      }
+}

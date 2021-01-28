@@ -1,0 +1,112 @@
+.home {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    grid-template-areas: 
+    "image info"
+    "image icons";
+}
+
+.home__image {
+    /* border: 1px white solid; */
+    grid-area: image;
+}
+
+.home__info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5vw;
+    text-align: right;
+    margin-bottom: 5rem;
+    justify-content: flex-end;
+   
+
+}
+
+.home__info > p:first-child {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.home__info > h1 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.home__info > p:nth-child(n+2) {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+
+
+.home__icons {
+    grid-area: icons;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    -webkit-animation: slideIcons 4s linear;
+    animation: slideIcons 4s linear;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    25% { opacity: 0.25; }
+    50% { opacity: 0.50; }
+    75% { opacity: 0.75; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    25% { opacity: 0.25; }
+    50% { opacity: 0.50; }
+    75% { opacity: 0.75; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIcons {
+
+    0% {
+        transform: translateX(-150%);
+    }
+
+    90% {
+        transform: scaleX(1.05);
+    }
+    100% {
+
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .home__info > h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .home__info > p:first-child {
+        font-size: 1.5rem;
+    }
+
+
+}

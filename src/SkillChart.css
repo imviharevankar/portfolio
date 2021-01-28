@@ -1,0 +1,22 @@
+.skillChart {
+    animation: slideSkill 2s linear;
+    margin-bottom: 30px;
+
+}
+
+.skillChart:nth-child(even) {
+    animation: slideSkillLeft 2s linear;
+}
+
+
+@keyframes slideSkill {
+    0% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes slideSkillLeft {
+    0% {
+        transform: translateY(-200%);
+    }
+}

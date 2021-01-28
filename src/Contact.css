@@ -1,0 +1,105 @@
+.contact > form {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    max-width: 400px;
+    animation: slideForm 2s linear;
+    -webkit-animation: slideForm 2s linear;
+    color: #F7F7F7;
+}
+
+.contact > form > input[type="text"] {
+    border: none;
+    height: 32px;
+    border-bottom: 1px solid whitesmoke;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 5vh;
+    animation: slideInput 3s linear;
+    -webkit-animation: slideInput 3s linear;
+    background-color: transparent;
+    color: #F7F7F7;
+}
+
+
+.contact > form > textarea{
+    min-height: 20vh;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 5vh;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    cursor: text;
+    word-break: break-all;
+    animation: slideMessage 3s linear;
+    -webkit-animation: slideMessage 3s linear;
+    background: transparent;
+    color: #F7F7F7;
+
+}
+
+.contact > form > Button {
+    width: 50%;
+    margin: auto;
+    height: 7vh;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    animation: slideButton 3s linear;
+    -webkit-animation: slideButton 3s linear;
+    box-shadow: 1px 2px 1px 0px black;
+    text-transform: capitalize !important;
+    font-size: 20px !important;
+    color: #F7F7F7;
+    border: 1px solid #F2D100 !important;
+    box-shadow: 1px 2px 1px 0px #F2D100;
+}
+
+.contact__alert {
+    width: 400px;
+    margin: auto;
+}
+
+
+@keyframes slideButton {
+    0% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes slideMessage {
+    0% {
+        transform: translateX(120%);
+    }
+}
+
+@keyframes slideInput {
+    0% {
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes slideForm {
+    0% {
+        transform: translateY(-200%);
+    }
+}
+
+
+@media only screen and (min-width: 980px) {
+    .contactMe > form > textarea {
+        font-size: 25px;
+    }
+
+}

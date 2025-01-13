@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #f7f7f7;
-  background-image: url(https://t3.ftcdn.net/jpg/01/02/88/40/240_F_102884000_9nDhPvgQwwaNgDWbAwUJVR0puNDOMYhL.jpg);
+  background: black;
   background-size: cover;
 }
 code {
